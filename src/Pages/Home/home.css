@@ -1,0 +1,24 @@
+.container-home{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+    background: var(--white);
+}
+.titulo{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-home img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 80vh;
+    
+
+}
