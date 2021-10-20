@@ -1,4 +1,4 @@
-
+import React from 'react';
 
 
 //essa pagina só a pessoa logada pode entrar

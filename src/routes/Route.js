@@ -1,26 +1,19 @@
-// import React, { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { useContext } from 'react';
 import { Route, Redirect } from 'react-router-dom';
-
-// import SignIn from '../Pages/SignIn';
-// import SignUp from '../Pages/SignUp';
-// import Home from '../Pages/Home';
-// import Header from '../Component/Header';
-// import Ocorrencia from '../Pages/Ocorrencia';
-// import Calendario from '../Pages/Calendario';
-// import Relatorios from '../Pages/Relatorio';
-// import Reciclagem from '../Pages/Reciclagem';
-// import Ferias from '../Pages/Ferias';
+import { AuthContext } from '../contexts/auth';
 
 export default function RouiteWrapper({
     component: Component,
     isPrivate,
     ...rest
-}) {
-
+}){
+    const { signed, loading } = useContext(AuthContext);
+    
     //==========================================================
     // pra saber se esta logado na aplicação ou não
-    const loading = false;
-    const signed = false;
+    
+    
 
     if (loading) {
         return(

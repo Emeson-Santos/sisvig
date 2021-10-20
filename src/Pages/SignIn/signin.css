@@ -13,13 +13,13 @@
     justify-content: center;
     flex-direction: column;
 }
-.logo-area{
+.login-area{
     display: flex;
     justify-content: center;
     background-color: #181c2e;
     width: 100%;    
 }
-.logo-area img{
+.login-area img{
     padding: 20px;
     width: 200px;
     height: 139px;
@@ -52,7 +52,7 @@ form button{
     color: #FFF;
     font-size: 1.3em;
 }
-.login a{
+.login a{ 
     margin: 1.5em 0;
     color: #000;
     cursor: pointer;
